@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> <!-- angularJS -->
+<script type="text/javascript" src = "caliculator_type_2.js"></script> <!-- custom JS --> 
+<link href="customlocation.css" rel="stylesheet"/> 
+</head>
+
+<body  >
+<div class = "container customlocation" ng-app = "myModule" ng-controller = "myController">
+	<div class = 'row'>
+      <div class = "col-sm-4">  </div> <!-- empty first span -->
+	  <div class = "col-sm-4">
+	  <div class="panel panel-success">
+      <div class="panel-heading">CALCULATOR</div>
+      <div class="panel-body">
+
+       	Enter your first value: <input type = "text" ng-model = "firstValue"> </br> </br>
+		Enter your second value: <input type = "text" ng-model = "secondValue"> </br> </br>
+
+		<input type = "button" value = "+"  class = "btn btn-success" ng-click = "symbol = '1'; perform()" />
+		<input type = "button" value = "-"  class = "btn btn-success" ng-click = "symbol = '2'; perform()" /> 
+		<input type = "button" value = "*"  class = "btn btn-success" ng-click = "symbol = '3'; perform()" /> 
+		<input type = "button" value = "/"  class = "btn btn-success" ng-click = "symbol = '4'; perform()"  /> </br> </br>
+          
+		<div ng-cloak>Total: {{anonymousResult}} </div>
+
+      </div>
+      </div>
+	  </div>
+	  </div>
+	</div>  
+</div>
+</body>
+
+</html>
+
+   
+
+	    
+
+
